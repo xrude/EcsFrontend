@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title>BOOK APP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/design.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.scss">
+</head>
+
+<body>
+
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://img.icons8.com/fluent/48/000000/book.png"  alt="" width="60" height="54" />
+                <span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></span>
+            </a>
+        </div>
+    </nav>
+    <h1 id="searchh1" class="text-center"></h1>
+
+    <form action="/results" method="GET" class="justify-content-center d-flex">
+        <input type="text" name="search" class="form-control w-25" placeholder="Enter book name..">
+        <button class="ml-3 text-center btn btn-primary" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">SEARCH BOOK</button>
+    </form>
+
+    <br>
+
+   
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <img src="https://i.ibb.co/y4KPnx9/1.png" class="mx-auto d-block" alt="" style="width: 200px;">
+                  <br>
+                  <p class="card-text text-center" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Harry Potter and the Philosopher's Stone</p>
+                  <br>
+                  <a href="#0" class="btn btn-primary cd-add-to-cart js-cd-add-to-cart" style="float: right;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">ADD TO CART</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <img src="https://i.ibb.co/6Fc9KNj/2.png"  class="mx-auto d-block" alt="" style="width: 200px;">
+                  <br>
+                  <p class="card-text text-center" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Harry Potter and the Chamber of Secrets.</p>
+                  <br>
+                  <a href="#" class="btn btn-primary cd-add-to-cart js-cd-add-to-cart" style="float: right;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">ADD TO CART</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="https://i.ibb.co/T2xfhHR/3.png" alt="" class="mx-auto d-block" alt="" style="width: 200px;">
+                    <br>
+                    <p class="card-text text-center" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Harry Potter and the Prisoner of Azkaban</p>
+                    <br>
+                    <a href="#" class="btn btn-primary cd-add-to-cart js-cd-add-to-cart" style="float: right;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+
+
+    <div class="cd-cart cd-cart--empty js-cd-cart">
+        <a href="#0" class="cd-cart__trigger text-replace">
+            Cart
+            <ul class="cd-cart__count"> <!-- cart items count -->
+                <li>0</li>
+                <li>0</li>
+            </ul> <!-- .cd-cart__count -->
+        </a>
+    
+        <div class="cd-cart__content">
+            <div class="cd-cart__layout">
+                <header class="cd-cart__header">
+                    <h2>Cart</h2>
+                    <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+                </header>
+                
+                <div class="cd-cart__body">
+                    <ul>
+                        <!-- products added to the cart will be inserted here using JavaScript -->
+                    </ul>
+                </div>
+    
+                <footer class="cd-cart__footer">
+                    <a href="#0" class="cd-cart__checkout">
+              <em>Checkout - $<span>0</span>
+                <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+                </svg>
+              </em>
+            </a>
+                </footer>
+            </div>
+        </div> <!-- .cd-cart__content -->
+    </div> <!-- cd-cart -->
+    <script src="../main.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="../util.js"></script> 
+
+</body>
+
+</html>
